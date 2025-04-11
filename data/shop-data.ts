@@ -166,11 +166,11 @@ export const contactInfo: ContactInfo = {
   phone: "+46 70 123 4567",
   hours: [
     {
-      days: "Tuesday - Saturday",
+      days: "Monday - Saturday",
       hours: "9:00 - 18:00",
     },
     {
-      days: "Sunday - Monday",
+      days: "Sunday",
       hours: "Closed",
     },
   ],
@@ -185,14 +185,14 @@ export const contactInfo: ContactInfo = {
 
 // Product Data
 export const products: Product[] = [
-  // Cupcakes (20)
+  // Cupcakes
   {
     id: "cupcake-1",
     name: "Classic Vanilla",
     description:
       "Fluffy vanilla cupcake topped with vanilla buttercream frosting and rainbow sprinkles.",
     price: 35,
-    image: "/images/products/cupcakes/vanilla.jpg",
+    image: "/images/products/cupcakes/classic-vanilla.png",
     category: "cupcake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
@@ -203,7 +203,7 @@ export const products: Product[] = [
     description:
       "Rich chocolate cupcake with chocolate ganache frosting and chocolate shavings.",
     price: 39,
-    image: "/images/products/cupcakes/chocolate.jpg",
+    image: "/images/products/cupcakes/chocolate-dream.png",
     category: "cupcake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
@@ -214,7 +214,7 @@ export const products: Product[] = [
     description:
       "Velvety red cake topped with cream cheese frosting and a hint of cocoa.",
     price: 42,
-    image: "/images/products/cupcakes/red-velvet.jpg",
+    image: "/images/products/cupcakes/red-velvet.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -224,7 +224,7 @@ export const products: Product[] = [
     description:
       "Tangy lemon cupcake with lemon curd filling and lemon buttercream frosting.",
     price: 40,
-    image: "/images/products/cupcakes/lemon.jpg",
+    image: "/images/products/cupcakes/lemon-delight.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -234,7 +234,7 @@ export const products: Product[] = [
     description:
       "Strawberry-infused cupcake with fresh strawberry buttercream frosting.",
     price: 42,
-    image: "/images/products/cupcakes/strawberry.jpg",
+    image: "/images/products/cupcakes/strawberry-bliss.png",
     category: "cupcake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
@@ -245,7 +245,7 @@ export const products: Product[] = [
     description:
       "Vanilla cupcake filled with salted caramel and topped with caramel buttercream.",
     price: 45,
-    image: "/images/products/cupcakes/salted-caramel.jpg",
+    image: "/images/products/cupcakes/salted-caramel.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -255,7 +255,7 @@ export const products: Product[] = [
     description:
       "Blueberry-studded cupcake with crumble topping and blueberry glaze.",
     price: 38,
-    image: "/images/products/cupcakes/blueberry.jpg",
+    image: "/images/products/cupcakes/blueberry-muffin.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -265,7 +265,7 @@ export const products: Product[] = [
     description:
       "Coffee-infused cupcake with espresso buttercream and chocolate-covered espresso beans.",
     price: 44,
-    image: "/images/products/cupcakes/coffee.jpg",
+    image: "/images/products/cupcakes/coffee-crunch.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -275,7 +275,7 @@ export const products: Product[] = [
     description:
       "Pistachio cupcake with rose-flavored buttercream and crushed pistachios.",
     price: 48,
-    image: "/images/products/cupcakes/pistachio-rose.jpg",
+    image: "/images/products/cupcakes/pistachio-rose.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy", "Nuts"],
   },
@@ -285,7 +285,7 @@ export const products: Product[] = [
     description:
       "Cinnamon-swirled cupcake with cinnamon cream cheese frosting and a mini cinnamon roll on top.",
     price: 43,
-    image: "/images/products/cupcakes/cinnamon.jpg",
+    image: "/images/products/cupcakes/cinnamon-swirl.jpg",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -295,7 +295,7 @@ export const products: Product[] = [
     description:
       "Coconut cupcake with coconut cream frosting and toasted coconut flakes.",
     price: 42,
-    image: "/images/products/cupcakes/coconut.jpg",
+    image: "/images/products/cupcakes/coconut-paradise.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -305,7 +305,7 @@ export const products: Product[] = [
     description:
       "Matcha-infused cupcake with matcha buttercream and white chocolate drizzle.",
     price: 46,
-    image: "/images/products/cupcakes/matcha.jpg",
+    image: "/images/products/cupcakes/matcha-green-tea.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -315,7 +315,7 @@ export const products: Product[] = [
     description:
       "Chocolate cupcake with peanut butter filling and peanut butter frosting topped with a mini peanut butter cup.",
     price: 45,
-    image: "/images/products/cupcakes/peanut-butter.jpg",
+    image: "/images/products/cupcakes/peanut-butter-cup.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy", "Peanuts"],
   },
@@ -325,7 +325,7 @@ export const products: Product[] = [
     description:
       "Chocolate cupcake with cherry filling and whipped cream frosting topped with a cherry and chocolate shavings.",
     price: 47,
-    image: "/images/products/cupcakes/black-forest.jpg",
+    image: "/images/products/cupcakes/black-forest.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -335,7 +335,7 @@ export const products: Product[] = [
     description:
       "Lavender-infused cupcake with honey buttercream and dried lavender buds.",
     price: 45,
-    image: "/images/products/cupcakes/lavender.jpg",
+    image: "/images/products/cupcakes/lavender-honey.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -345,7 +345,7 @@ export const products: Product[] = [
     description:
       "Spiced carrot cupcake with cream cheese frosting and candied carrot decoration.",
     price: 41,
-    image: "/images/products/cupcakes/carrot.jpg",
+    image: "/images/products/cupcakes/carrot-cake.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy", "Nuts"],
   },
@@ -355,7 +355,7 @@ export const products: Product[] = [
     description:
       "Chocolate cupcake with mint chocolate chip buttercream and chocolate ganache drizzle.",
     price: 44,
-    image: "/images/products/cupcakes/mint-chocolate.jpg",
+    image: "/images/products/cupcakes/mint-chocolate-chip.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -365,7 +365,7 @@ export const products: Product[] = [
     description:
       "Cheesecake-flavored cupcake with raspberry filling and graham cracker crumble.",
     price: 46,
-    image: "/images/products/cupcakes/raspberry-cheesecake.jpg",
+    image: "/images/products/cupcakes/raspberry-cheesecake.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -375,7 +375,7 @@ export const products: Product[] = [
     description:
       "Almond-flavored cupcake with amaretto buttercream and sliced almonds.",
     price: 43,
-    image: "/images/products/cupcakes/almond.jpg",
+    image: "/images/products/cupcakes/almond-amaretto.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy", "Nuts"],
   },
@@ -385,20 +385,20 @@ export const products: Product[] = [
     description:
       "Funfetti cupcake with vanilla buttercream and colorful sprinkles.",
     price: 40,
-    image: "/images/products/cupcakes/birthday.jpg",
+    image: "/images/products/cupcakes/birthday-cake.png",
     category: "cupcake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
 
-  // Wedding Cakes (10)
+  // Wedding Cakes
   {
     id: "wedding-cake-1",
     name: "Classic Elegance",
     description:
       "Three-tier vanilla cake with smooth buttercream and fresh flower decorations. Perfect for traditional weddings.",
     price: 3500,
-    image: "/images/products/wedding-cakes/classic-elegance.jpg",
+    image: "/images/products/wedding-cakes/classic-elegance.png",
     category: "wedding-cake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
@@ -409,7 +409,7 @@ export const products: Product[] = [
     description:
       "Four-tier chocolate cake with ganache, chocolate buttercream, and chocolate decorations for chocolate lovers.",
     price: 4200,
-    image: "/images/products/wedding-cakes/chocolate-symphony.jpg",
+    image: "/images/products/wedding-cakes/chocolate-symphony.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -419,7 +419,7 @@ export const products: Product[] = [
     description:
       "Three-tier semi-naked cake with berry compote filling and fresh berries. Perfect for rustic or barn weddings.",
     price: 3800,
-    image: "/images/products/wedding-cakes/rustic-charm.jpg",
+    image: "/images/products/wedding-cakes/rustic-charm.png",
     category: "wedding-cake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
@@ -430,7 +430,7 @@ export const products: Product[] = [
     description:
       "Four-tier vanilla cake with lavender buttercream and hand-piped floral designs in pastel colors.",
     price: 4500,
-    image: "/images/products/wedding-cakes/floral-fantasy.jpg",
+    image: "/images/products/wedding-cakes/floral-fantasy.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -440,7 +440,7 @@ export const products: Product[] = [
     description:
       "Three-tier marble cake with cream cheese frosting and gold leaf accents for a modern look.",
     price: 4100,
-    image: "/images/products/wedding-cakes/marble-magic.jpg",
+    image: "/images/products/wedding-cakes/marble-magic.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -450,7 +450,7 @@ export const products: Product[] = [
     description:
       "Two-tier minimalist cake with white buttercream and simple greenery, embodying Nordic design principles.",
     price: 3200,
-    image: "/images/products/wedding-cakes/scandinavian-simplicity.jpg",
+    image: "/images/products/wedding-cakes/scandinavian-simplicity.png",
     category: "wedding-cake",
     featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
@@ -461,7 +461,7 @@ export const products: Product[] = [
     description:
       "Four-tier cake with cascading blue ombre effect and silver decorative elements for a regal celebration.",
     price: 4800,
-    image: "/images/products/wedding-cakes/royal-blue.jpg",
+    image: "/images/products/wedding-cakes/royal-blue.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -471,7 +471,7 @@ export const products: Product[] = [
     description:
       "Three-tier fondant cake with geometric patterns and gold accents for modern weddings.",
     price: 4300,
-    image: "/images/products/wedding-cakes/geometric-glamour.jpg",
+    image: "/images/products/wedding-cakes/geometric-glamour.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -481,7 +481,7 @@ export const products: Product[] = [
     description:
       "Four-tier cake with textured buttercream and cascading fresh garden flowers for an outdoor wedding.",
     price: 4600,
-    image: "/images/products/wedding-cakes/garden-romance.jpg",
+    image: "/images/products/wedding-cakes/garden-romance.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
@@ -491,7 +491,7 @@ export const products: Product[] = [
     description:
       "Three-tier white cake with snowflake details and silver accents, perfect for winter weddings.",
     price: 4000,
-    image: "/images/products/wedding-cakes/winter-wonderland.jpg",
+    image: "/images/products/wedding-cakes/winter-wonderland.png",
     category: "wedding-cake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
