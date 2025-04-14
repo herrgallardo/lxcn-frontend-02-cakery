@@ -561,13 +561,6 @@ export const footerSections: FooterSection[] = [
       { name: "Custom Orders", path: "/contact" },
     ],
   },
-  {
-    title: "Legal",
-    links: [
-      { name: "Privacy Policy", path: "/privacy" },
-      { name: "Terms of Service", path: "/terms" },
-    ],
-  },
 ]
 
 // Footer Content
