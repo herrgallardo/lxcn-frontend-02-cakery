@@ -154,8 +154,8 @@ export const storeInfo: StoreInfo = {
   tagline: "Artisanal cupcakes and wedding cakes baked with love",
   description:
     "At I Knead Cake, we craft delicious cupcakes and stunning wedding cakes using only the finest ingredients. Each creation is made with passion and attention to detail to make your celebration truly special.",
-  logo: "/images/logo.png",
-  logo2: "/images/logo2.png",
+  logo: "/images/store/logo.png",
+  logo2: "/images/store/logo2.png",
   founded: 2018,
 }
 
@@ -596,19 +596,19 @@ export const aboutPageContent: AboutPageContent = {
       name: "Anna Lindström",
       role: "Founder & Head Baker",
       bio: "Anna trained at the Swedish Culinary Institute before opening I Knead Cake. She specializes in wedding cakes and loves creating custom designs.",
-      image: "/images/about/anna.jpg",
+      image: "/images/about/anna-lindstrom.png",
     },
     {
       name: "Oliver Bergman",
       role: "Pastry Chef",
       bio: "Oliver brings creativity and precision to our cupcake creations. He's known for his innovative flavor combinations and beautiful decorations.",
-      image: "/images/about/oliver.jpg",
+      image: "/images/about/oliver-bergman.png",
     },
     {
       name: "Emma Svensson",
       role: "Customer Relations",
       bio: "Emma ensures every customer has a wonderful experience. She handles custom orders and helps plan for special events.",
-      image: "/images/about/emma.jpg",
+      image: "/images/about/emma-svensson.png",
     },
   ],
   values: [
