@@ -118,3 +118,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --color-my-lavender: #9f90c5;
+  --color-my-peach: #ffe5d9;
+}
+
+.font-great-vibes {
+  font-family: var(--font-great-vibes);
+}

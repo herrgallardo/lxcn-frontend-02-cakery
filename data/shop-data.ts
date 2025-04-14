@@ -45,6 +45,7 @@ export interface StoreInfo {
   tagline: string
   description: string
   logo: string // Path to logo in public/images
+  logo2: string
   founded: number
 }
 
@@ -137,13 +138,13 @@ export const navLinks: NavLink[] = [
 export const socialMediaLinks: SocialMediaLink[] = [
   {
     platform: "Instagram",
-    url: "https://www.instagram.com/ikneadcake",
-    icon: "/icons/instagram.svg",
+    url: "https://www.instagram.com",
+    icon: "/icons/instagram.png",
   },
   {
     platform: "Facebook",
-    url: "https://www.facebook.com/ikneadcake",
-    icon: "/icons/facebook.svg",
+    url: "https://www.facebook.com",
+    icon: "/icons/facebook.png",
   },
 ]
 
@@ -154,6 +155,7 @@ export const storeInfo: StoreInfo = {
   description:
     "At I Knead Cake, we craft delicious cupcakes and stunning wedding cakes using only the finest ingredients. Each creation is made with passion and attention to detail to make your celebration truly special.",
   logo: "/images/logo.png",
+  logo2: "/images/logo2.png",
   founded: 2018,
 }
 
