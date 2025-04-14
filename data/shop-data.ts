@@ -109,6 +109,43 @@ export interface NewsletterContent {
   privacyText: string
 }
 
+export interface ContactPageContent {
+  pageTitle: string
+  pageDescription: string
+  infoTitle: string
+  formTitle: string
+  storeImage: string
+  addressLabel: string
+  emailLabel: string
+  phoneLabel: string
+  hoursLabel: string
+  deliveryTitle: string
+  deliveryAreasLabel: string
+  pickupLocationLabel: string
+  orderLeadTimeLabel: string
+  successMessage: {
+    title: string
+    message: string
+  }
+  errorMessage: {
+    title: string
+  }
+  form: {
+    nameLabel: string
+    emailLabel: string
+    phoneLabel: string
+    subjectLabel: string
+    messageLabel: string
+    subjectPlaceholder: string
+    subjectOptions: {
+      value: string
+      label: string
+    }[]
+    submitButtonText: string
+    sendingButtonText: string
+  }
+}
+
 // Navigation Data
 export const navLinks: NavLink[] = [
   {
@@ -654,6 +691,48 @@ export const newsletterContent: NewsletterContent = {
   privacyText: "We respect your privacy. Unsubscribe at any time.",
 }
 
+// Contact Page Content
+export const contactPageContent: ContactPageContent = {
+  pageTitle: "Get in Touch",
+  pageDescription:
+    "Have a question or want to place an order? Contact us using the form below or through any of our contact methods.",
+  infoTitle: "Contact Information",
+  formTitle: "Send us a Message",
+  storeImage: "/images/about/bakery.png",
+  addressLabel: "Address",
+  emailLabel: "Email",
+  phoneLabel: "Phone",
+  hoursLabel: "Hours",
+  deliveryTitle: "Delivery Information",
+  deliveryAreasLabel: "Delivery Areas:",
+  pickupLocationLabel: "Pickup Location:",
+  orderLeadTimeLabel: "Order Lead Time:",
+  successMessage: {
+    title: "Thank you for your message!",
+    message: "We'll get back to you as soon as possible.",
+  },
+  errorMessage: {
+    title: "Error",
+  },
+  form: {
+    nameLabel: "Name",
+    emailLabel: "Email",
+    phoneLabel: "Phone Number",
+    subjectLabel: "Subject",
+    messageLabel: "Message",
+    subjectPlaceholder: "Select a subject",
+    subjectOptions: [
+      { value: "order", label: "Place an Order" },
+      { value: "custom", label: "Custom Order Inquiry" },
+      { value: "wedding", label: "Wedding Cake Consultation" },
+      { value: "feedback", label: "Feedback" },
+      { value: "other", label: "Other" },
+    ],
+    submitButtonText: "Send Message",
+    sendingButtonText: "Sending...",
+  },
+}
+
 // Export all data as default for convenience
 const shopData = {
   navLinks,
@@ -666,6 +745,7 @@ const shopData = {
   homePageContent,
   aboutPageContent,
   newsletterContent,
+  contactPageContent,
 }
 
 export default shopData
