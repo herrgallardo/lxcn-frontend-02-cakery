@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-my-peach">
+    <footer className="py-8 bg-my-berry/30">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="flex flex-col md:flex-row justify-between items-start mb-4">
           {/* Left side - shop info and social links */}

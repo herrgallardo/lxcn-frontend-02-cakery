@@ -84,16 +84,22 @@ export interface AboutPageContent {
     content: string
   }
   team: {
-    name: string
-    role: string
-    bio: string
-    image: string
-  }[]
+    heading: string
+    members: {
+      name: string
+      role: string
+      bio: string
+      image: string
+    }[]
+  }
   values: {
-    title: string
-    description: string
-    icon: string
-  }[]
+    heading: string
+    items: {
+      title: string
+      description: string
+      icon: string
+    }[]
+  }
 }
 
 export interface NewsletterContent {
@@ -585,52 +591,58 @@ export const homePageContent: HomePageContent = {
 
 // About Page Content
 export const aboutPageContent: AboutPageContent = {
-  mainImage: "/images/about/bakery.jpg",
+  mainImage: "/images/about/bakery.png",
   story: {
     heading: "Our Story",
     content:
       "I Knead Cake was founded in 2018 by pastry chef Anna Lindström with the vision of creating beautiful, delicious treats that bring joy to life's special moments. What started as a small home-based business quickly grew into one of Lund's most beloved bakeries.\n\nWe believe that every cupcake and cake should not only look stunning but taste amazing too. That's why we use only the finest ingredients and bake everything fresh to order.\n\nAt I Knead Cake, we're passionate about being part of your celebrations, from birthdays and weddings to everyday moments worth savoring.",
   },
-  team: [
-    {
-      name: "Anna Lindström",
-      role: "Founder & Head Baker",
-      bio: "Anna trained at the Swedish Culinary Institute before opening I Knead Cake. She specializes in wedding cakes and loves creating custom designs.",
-      image: "/images/about/anna-lindstrom.png",
-    },
-    {
-      name: "Oliver Bergman",
-      role: "Pastry Chef",
-      bio: "Oliver brings creativity and precision to our cupcake creations. He's known for his innovative flavor combinations and beautiful decorations.",
-      image: "/images/about/oliver-bergman.png",
-    },
-    {
-      name: "Emma Svensson",
-      role: "Customer Relations",
-      bio: "Emma ensures every customer has a wonderful experience. She handles custom orders and helps plan for special events.",
-      image: "/images/about/emma-svensson.png",
-    },
-  ],
-  values: [
-    {
-      title: "Quality",
-      description:
-        "We never compromise on the quality of our ingredients or our finished products.",
-      icon: "/icons/quality.svg",
-    },
-    {
-      title: "Creativity",
-      description:
-        "We love bringing creative designs and flavor combinations to life.",
-      icon: "/icons/creativity.svg",
-    },
-    {
-      title: "Community",
-      description:
-        "We're proud to be part of the Lund community and support local suppliers.",
-      icon: "/icons/community.svg",
-    },
-  ],
+  team: {
+    heading: "Our Team",
+    members: [
+      {
+        name: "Anna Lindström",
+        role: "Founder & Head Baker",
+        bio: "Anna trained at the Swedish Culinary Institute before opening I Knead Cake. She specializes in wedding cakes and loves creating custom designs.",
+        image: "/images/about/anna-lindstrom.png",
+      },
+      {
+        name: "Oliver Bergman",
+        role: "Pastry Chef",
+        bio: "Oliver brings creativity and precision to our cupcake creations. He's known for his innovative flavor combinations and beautiful decorations.",
+        image: "/images/about/oliver-bergman.png",
+      },
+      {
+        name: "Emma Svensson",
+        role: "Customer Relations",
+        bio: "Emma ensures every customer has a wonderful experience. She handles custom orders and helps plan for special events.",
+        image: "/images/about/emma-svensson.png",
+      },
+    ],
+  },
+  values: {
+    heading: "Our Values",
+    items: [
+      {
+        title: "Quality",
+        description:
+          "We never compromise on the quality of our ingredients or our finished products.",
+        icon: "/icons/quality.png",
+      },
+      {
+        title: "Creativity",
+        description:
+          "We love bringing creative designs and flavor combinations to life.",
+        icon: "/icons/creativity.png",
+      },
+      {
+        title: "Community",
+        description:
+          "We're proud to be part of the Lund community and support local suppliers.",
+        icon: "/icons/community.png",
+      },
+    ],
+  },
 }
 
 // Newsletter Subscription
