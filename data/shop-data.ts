@@ -110,6 +110,8 @@ export interface NewsletterContent {
   description: string
   buttonText: string
   privacyText: string
+  successMessage: string
+  invalidEmailMessage?: string
 }
 
 export interface ContactPageContent {
@@ -687,6 +689,8 @@ export const newsletterContent: NewsletterContent = {
     "Subscribe to our newsletter for seasonal recipes, special offers, and event announcements.",
   buttonText: "Subscribe",
   privacyText: "We respect your privacy. Unsubscribe at any time.",
+  successMessage: "Thank you for joining our sweet community!",
+  invalidEmailMessage: "Please provide a valid email address.",
 }
 
 // Contact Page Content
