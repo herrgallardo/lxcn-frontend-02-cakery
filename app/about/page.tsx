@@ -76,15 +76,16 @@ const About = () => {
             {aboutPageContent.values.items.map((value) => (
               <div
                 key={value.title}
-                className="bg-my-sage/40 p-6  rounded-lg shadow-lg shadow-my-lavender/10 hover:shadow-xl transition-shadow duration-300 border border-my-sage"
+                className="bg-my-sage/40 p-6  rounded-lg shadow-sm shadow-black/50 hover:shadow-xl transition-shadow duration-300 border border-my-sage"
               >
                 <div className="flex items-center justify-center mb-4">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <div className="w-36 h-36 flex items-center justify-center">
                     <Image
                       src={value.icon}
                       alt={value.title}
-                      width={32}
-                      height={32}
+                      width={144}
+                      height={144}
+                      className="rounded-full shadow-md shadow-black/50"
                     />
                   </div>
                 </div>

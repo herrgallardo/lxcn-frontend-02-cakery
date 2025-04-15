@@ -65,6 +65,9 @@ export interface HomePageContent {
     ctaLink: string
     image: string
   }
+  featuresSectionTitle: string
+  featuredProductsSectionTitle: string
+  testimonialsSectionTitle: string
   features: {
     title: string
     description: string
@@ -239,7 +242,6 @@ export const products: Product[] = [
     price: 35,
     image: "/images/products/cupcakes/classic-vanilla.png",
     category: "cupcake",
-    featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
   {
@@ -392,6 +394,7 @@ export const products: Product[] = [
     price: 41,
     image: "/images/products/cupcakes/carrot-cake.png",
     category: "cupcake",
+    featured: true,
     allergens: ["Gluten", "Eggs", "Dairy", "Nuts"],
   },
   {
@@ -432,7 +435,6 @@ export const products: Product[] = [
     price: 40,
     image: "/images/products/cupcakes/birthday-cake.png",
     category: "cupcake",
-    featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
 
@@ -445,7 +447,6 @@ export const products: Product[] = [
     price: 3500,
     image: "/images/products/wedding-cakes/classic-elegance.png",
     category: "wedding-cake",
-    featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
   {
@@ -477,6 +478,7 @@ export const products: Product[] = [
     price: 4500,
     image: "/images/products/wedding-cakes/floral-fantasy.png",
     category: "wedding-cake",
+    featured: true,
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
   {
@@ -576,25 +578,28 @@ export const homePageContent: HomePageContent = {
     subheading: "Handcrafted cupcakes and wedding cakes made in Lund, Sweden",
     ctaText: "View Our Products",
     ctaLink: "/products",
-    image: "/images/hero.jpg",
+    image: "/images/home/hero.png",
   },
+  featuresSectionTitle: "Why Choose I Knead Cake",
+  featuredProductsSectionTitle: "Featured Treats",
+  testimonialsSectionTitle: "What Our Customers Say",
   features: [
     {
       title: "Fresh Ingredients",
       description:
         "We use only the freshest, locally-sourced ingredients in all of our baked goods.",
-      icon: "/icons/ingredients.svg",
+      icon: "/icons/ingredients.png",
     },
     {
       title: "Custom Orders",
       description:
         "Need something special? We can create custom designs for any celebration.",
-      icon: "/icons/custom.svg",
+      icon: "/icons/custom.png",
     },
     {
       title: "Local Delivery",
       description: "We offer delivery throughout Lund and surrounding areas.",
-      icon: "/icons/delivery.svg",
+      icon: "/icons/delivery.png",
     },
   ],
   testimonials: [
@@ -602,19 +607,19 @@ export const homePageContent: HomePageContent = {
       name: "Lisa Andersson",
       quote:
         "The wedding cake was absolutely perfect! Everyone at our reception was asking where we got it from.",
-      image: "/images/testimonials/lisa.jpg",
+      image: "/images/home/testimonials/lisa-andersson.png",
     },
     {
       name: "Erik Johansson",
       quote:
         "The cupcakes were not only beautiful but delicious! I order them for every office party now.",
-      image: "/images/testimonials/erik.jpg",
+      image: "/images/home/testimonials/erik-johansson.png",
     },
     {
       name: "Maria Nilsson",
       quote:
         "I appreciate the attention to detail and the friendly service. Best bakery in Lund!",
-      image: "/images/testimonials/maria.jpg",
+      image: "/images/home/testimonials/maria-nilsson.png",
     },
   ],
 }
