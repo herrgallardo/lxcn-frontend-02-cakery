@@ -52,7 +52,7 @@ const Products = () => {
                       className="md:basis-1/2 lg:basis-1/3 pl-4"
                     >
                       <div className="bg-white rounded-lg overflow-hidden shadow-lg drop-shadow-black hover:shadow-xl transition-all duration-300">
-                        <div className="relative pt-[100%]">
+                        <div className="relative pt-[130%]">
                           <Image
                             src={product.image}
                             alt={product.name}
@@ -64,7 +64,7 @@ const Products = () => {
                           <h3 className="text-xl font-semibold mb-2 text-my-lavender text-shadow-sm text-shadow-black/50">
                             {product.name}
                           </h3>
-                          <p className="text-gray-700 mb-4 text-sm h-12 overflow-hidden">
+                          <p className="text-gray-700 mb-4 text-sm h-20 overflow-hidden">
                             {product.description}
                           </p>
                           <div className="flex justify-between items-center">
