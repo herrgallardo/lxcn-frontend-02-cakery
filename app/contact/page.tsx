@@ -2,7 +2,12 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { contactInfo, storeInfo, contactPageContent } from "@/data/shop-data"
+import {
+  contactInfo,
+  storeInfo,
+  contactPageContent,
+  newsletterContent,
+} from "@/data/shop-data"
 import { cn } from "@/lib/utils"
 import { Mail, Phone, Clock, MapPin } from "lucide-react"
 
@@ -14,8 +19,10 @@ const Contact = () => {
     subject: "",
     message: "",
   })
+  const [newsletterEmail, setNewsletterEmail] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
+  const [newsletterSuccess, setNewsletterSuccess] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const handleChange = (
@@ -28,6 +35,34 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }))
+  }
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(newsletterEmail)) {
+      setError(
+        newsletterContent.invalidEmailMessage ||
+          "Please provide a valid email address."
+      )
+      return
+    }
+
+    setIsSubmitting(true)
+    // Simulate newsletter submission
+    setTimeout(() => {
+      setNewsletterSuccess(true)
+      setNewsletterEmail("")
+      setIsSubmitting(false)
+      setError(null)
+
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        setNewsletterSuccess(false)
+      }, 5000)
+    }, 1000)
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -328,6 +363,53 @@ const Contact = () => {
               </button>
             </form>
           </div>
+        </div>
+
+        {/* Newsletter Section */}
+        <div className="mt-16 bg-my-sage/40 p-8 rounded-lg shadow-lg drop-shadow-black text-center">
+          <h2 className="text-3xl font-semibold mb-4 text-my-lavender text-shadow-sm text-shadow-black/50">
+            {newsletterContent.heading}
+          </h2>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+            {newsletterContent.description}
+          </p>
+
+          {newsletterSuccess ? (
+            <div className="bg-green-50 border border-green-200 text-green-700 p-4 rounded-md mb-6 max-w-md mx-auto">
+              <p>{newsletterContent.successMessage}</p>
+            </div>
+          ) : (
+            <form
+              onSubmit={handleNewsletterSubmit}
+              className="max-w-md mx-auto"
+            >
+              <div className="flex items-center bg-white rounded-lg shadow-md overflow-hidden">
+                <input
+                  type="email"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  required
+                  className="flex-grow px-4 py-3 text-gray-700 focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={cn(
+                    "bg-my-lavender text-white px-6 py-3 hover:bg-my-lavender/90 transition-colors",
+                    isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                  )}
+                >
+                  {isSubmitting
+                    ? "Subscribing..."
+                    : newsletterContent.buttonText}
+                </button>
+              </div>
+              <p className="text-sm text-gray-600 mt-3">
+                {newsletterContent.privacyText}
+              </p>
+            </form>
+          )}
         </div>
       </div>
     </div>
