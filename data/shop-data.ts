@@ -332,7 +332,7 @@ export const products: Product[] = [
     description:
       "Cinnamon-swirled cupcake with cinnamon cream cheese frosting and a mini cinnamon roll on top.",
     price: 43,
-    image: "/images/products/cupcakes/cinnamon-swirl.jpg",
+    image: "/images/products/cupcakes/cinnamon-swirl.png",
     category: "cupcake",
     allergens: ["Gluten", "Eggs", "Dairy"],
   },
