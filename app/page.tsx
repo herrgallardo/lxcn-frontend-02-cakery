@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { homePageContent, products, storeInfo } from "@/data/shop-data"
+import AllergenIcons from "@/components/allergen-icons"
 
 export default function Home() {
   // Filter featured products
@@ -106,12 +107,21 @@ export default function Home() {
                     <span className="text-lg font-bold text-my-lavender">
                       {product.price} SEK
                     </span>
-                    <Link
-                      href={`/products/${product.category}s`}
-                      className="px-3 py-1 bg-my-berry text-white rounded-md text-sm hover:bg-my-berry/90 transition-colors"
-                    >
-                      View
-                    </Link>
+                    <div className="flex items-center space-x-2">
+                      {product.allergens && (
+                        <AllergenIcons
+                          allergens={product.allergens}
+                          size={16}
+                          className="mr-2"
+                        />
+                      )}
+                      <Link
+                        href={`/products/${product.category}s`}
+                        className="px-3 py-1 bg-my-berry text-white rounded-md text-sm hover:bg-my-berry/90 transition-colors"
+                      >
+                        View
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

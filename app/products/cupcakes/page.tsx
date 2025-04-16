@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { products, navLinks } from "@/data/shop-data"
+import AllergenIcons from "@/components/allergen-icons"
 import {
   Carousel,
   CarouselContent,
@@ -57,9 +58,7 @@ const Cupcakes = () => {
                         {cupcake.price} SEK
                       </span>
                       {cupcake.allergens && (
-                        <div className="text-xs text-gray-500">
-                          {cupcake.allergens.join(", ")}
-                        </div>
+                        <AllergenIcons allergens={cupcake.allergens} />
                       )}
                     </div>
                   </div>
@@ -95,9 +94,7 @@ const Cupcakes = () => {
                     {cupcake.price} SEK
                   </span>
                   {cupcake.allergens && (
-                    <div className="text-xs text-gray-500">
-                      {cupcake.allergens.join(", ")}
-                    </div>
+                    <AllergenIcons allergens={cupcake.allergens} />
                   )}
                 </div>
               </div>
