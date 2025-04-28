@@ -198,6 +198,78 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Environment Variables Setup
+
+For the contact form functionality to work properly, you'll need to set up environment variables:
+
+1. Create a `.env.local` file in the root directory of your project
+2. Add the following variables:
+
+```env
+# API keys for email service
+RESEND_API_KEY=your_resend_api_key
+CONTACT_EMAIL=your_email@example.com
+FROM_EMAIL=I Knead Cake <no-reply@resend.dev>
+EMAIL_INTRO="New message from the I Knead Cake website:"
+```
+
+These variables are used by the contact form API route to:
+
+- Connect with the Resend service for sending emails
+- Set the destination email for form submissions
+- Configure the "From" address for emails
+- Customize the email introduction text
+
+To get a Resend API key:
+
+1. Sign up for a free account at [Resend](https://resend.com)
+2. Navigate to the API Keys section in your dashboard
+3. Create a new API key
+4. Copy and paste it into your `.env.local` file
+
+For production deployment on Vercel, add these environment variables in your project settings.
+
+## Tailwind Configuration
+
+This project uses Tailwind CSS 4 with Next.js 15's built-in support. The configuration is handled through the following files:
+
+### postcss.config.mjs
+
+```javascript
+const config = {
+  plugins: ["@tailwindcss/postcss"],
+}
+
+export default config
+```
+
+### globals.css
+
+The project uses a custom color palette defined in the app/globals.css file:
+
+```css
+@theme {
+  --color-my-lavender: #9f90c5;
+  --color-my-peach: #ffe5d9;
+  --color-my-sage: #d8e2dc;
+  --color-my-berry: #f7a1c4;
+  --color-my-mint: #b5ead7;
+  --color-my-lemon: #fff7ae;
+  --color-my-blueberry: #a3c4f3;
+}
+```
+
+These colors can be used throughout the application with Tailwind classes like `bg-my-lavender`, `text-my-sage`, etc.
+
+### Shadow and Text Effects
+
+The project also uses custom shadow and text effects that can be applied with the following classes:
+
+- `shadow-xs`, `shadow-sm`, `shadow-md`, `shadow-lg`, `shadow-xl` - For various shadow sizes
+- `drop-shadow-black` - For drop shadows with black color
+- `text-shadow-sm`, `text-shadow-md` - For text shadows
+- `text-shadow-black/50` - For text shadows with semi-transparent black
+
 ## Making Changes
 
 ### Updating Shop Data
